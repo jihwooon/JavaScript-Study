@@ -6,6 +6,7 @@
 //String - Array of characters
 //Symbol -  Unique value
 
+//String = ''
 let name = 'Dary123414';
 
 //Number

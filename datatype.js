@@ -50,3 +50,5 @@ console.log(personalInformation);
 console.log(typeof personalInformation);
 console.log(today);
 console.log(typeof today);
+
+

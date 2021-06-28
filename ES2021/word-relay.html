@@ -23,12 +23,22 @@
     console.log(typeof number);
     const yesOrNo = confirm('확인이나 취소를 눌러보세요?');
 
-    //HTML 태그 선택하기
-    const $input = document.querySelector('input');
-        
+    document.querySelector('input').addEventListener('input', function() {
+        console.log('글자입력');
+        return undefined;
+    });
+
+    const onClick = function () {
+        console.log('버튼 클릭')
+
+    }
+ /*이벤트 리스너
+ * add EventListener ('선택자', 함수)
+ * */
+    document.querySelector('button').addEventListener('click', onClick
+
+    );
 
 </script>
-
 </body>
-
 </html>

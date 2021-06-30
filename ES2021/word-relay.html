@@ -6,38 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>끝말잇기순서</title>
 </head>
-
-
 <body>
+
     <div id = "order"><span>1</span>번째 참가자</div>
     <div>제시어 : <span id = "word"></span></div>
     <input type ="text">
-    <button class ="btn">입력1</button>
-    <button class ="btn">입력2</button>
-    <button class ="btn">입력3</button>
+    <button class ="btn">입력</button>
 
     <script>
-    const number = parseInt(prompt('몇 명이 참가하나요?'), 10);
+    const number = parseInt(prompt('몇 명이 참가하나요?'));
     // const number = prompt('몇 명이 참가하나요?');
-    alert(number); //알림창
-    console.log(typeof number);
-    const yesOrNo = confirm('확인이나 취소를 눌러보세요?');
+    const $button = document.querySelector('button');
+    const $input = document.querySelector('input');
+    const $word = document.querySelector('#word');
+    let word; //제시어
+    let newWord; //새로 입력한 단어
+    
 
-    document.querySelector('input').addEventListener('input', function() {
-        console.log('글자입력');
-        return undefined;
-    });
-
-    const onClick = function () {
-        console.log('버튼 클릭')
-
+    const onClickButton = () => { //버튼 클릭 시
+        if(!word) { // 제시어가 비어 있다면?
+            //비어있다
+            word = newWord; //새로 입력한 단어가 제시어가 된다.
+            $word.textContent = word;
+            $input.value = '';
+        }else { // 입력한 단어가 제시어가 된다.
+            //비어 있지 않다.
+        }
     }
- /*이벤트 리스너
- * add EventListener ('선택자', 함수)
- * */
-    document.querySelector('button').addEventListener('click', onClick
 
-    );
+    const onInput = (event) => {
+        newWord = event.target.value;
+    }  
+
+    $button.addEventListener('click', onClickButton);
+    $input.addEventListener('input', onInput);
 
 </script>
 </body>

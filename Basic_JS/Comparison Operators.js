@@ -20,3 +20,10 @@ console.log(x !== y);
 // > Les than or than
 console.log(x >= y);
 
+function add1 (a, b) {
+    console.log(a,b);
+
+}
+
+add1(1,2);
+

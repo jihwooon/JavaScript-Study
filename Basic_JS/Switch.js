@@ -16,6 +16,7 @@ if(x == 1) {
     console.log("No match found.");
 }
 
+//자주 쓰는 구문
 switch (x) {
     case 1:
         console.log("x is equal to 1");

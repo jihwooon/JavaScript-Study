@@ -1,3 +1,4 @@
+
 function statement(invoices, plays) {
     let totalAmount = 0;
     let volumeCredits = 0;

@@ -41,6 +41,28 @@ app.post('/hello4', (req,res) => {
 
 })
 
+app.post('/hello5', (req,res) => {
+    const result = {
+        code: 0,
+        message: 'success'
+
+    };
+    res.send(result);
+
+})
+
+app.post('/hello6', (req, res) => {
+    console.log(req.body);
+    const result = req.body;
+    res.send(result);
+
+})
+
+app.use(express.json());
+
+app.use(express.urlencoded({
+    extended: true
+}))
 
 app.listen(8080, () => {
     console.log('server is listening 8080');

@@ -75,3 +75,41 @@ const updateMike = update.bind(jihwooon);
 
 update(1980,"police");
 console.log(jihwooon);
+
+
+const user = {
+    name: "aaa",
+    showName: function () {
+        console.log(`hello, ${this.name}`);
+
+    },
+};
+user.showName();
+
+let fn = user.showName;
+
+fn.call(user);
+fn.bind(user);
+
+let boundFn = fn.bind(user);
+
+boundFn();
+
+
+const apple = {
+    product: "airpod",
+
+
+};
+const microsoft = {
+    product: "surface",
+
+};
+
+function showThisproduct() {
+    console.log(this.product);
+};
+
+showThisproduct(); // undefined
+showThisproduct.call(apple); //airpod
+showThisproduct.call(microsoft); //surface

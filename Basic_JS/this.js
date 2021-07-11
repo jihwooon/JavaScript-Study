@@ -113,3 +113,14 @@ function showThisproduct() {
 showThisproduct(); // undefined
 showThisproduct.call(apple); //airpod
 showThisproduct.call(microsoft); //surface
+
+
+var Cat = function (name, age) {
+    this.bark = '야옹';
+    this.name = name;
+    this.age = age;
+
+};
+
+var choco = new Cat('초코', 7);
+console.log(choco);

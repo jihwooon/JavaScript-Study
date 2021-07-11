@@ -8,6 +8,3 @@ console.log(a);
 
 var b;
 b = 'abc';
-
-
-

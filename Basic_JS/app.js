@@ -46,3 +46,5 @@ console.log(typeof val);
 console.log(val.length);
 console.log(val.toFixed(2));
 
+
+

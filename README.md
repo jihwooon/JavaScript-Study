@@ -1,7 +1,24 @@
-# 자바스크립트 공부하기 위한 공간입니다.
+# 자바스크립트
 
-용어, 문법, 기본 지식 등 관련 자료들을 모웁니다.
+작성자: 안지환  
+마지막 수정일: 2022.08.05
 
-정리 블로그 : https://www.notion.so/JavaScript-Beginner-0b4f6a2ed2684212a7ba1722ef7af021
+### 배경 (Background)
 
-쓰는 툴 : WebStorm
+
+### 목표 (Goals)
+
+
+### 목표가 아닌 것 (Non-goals)
+
+
+### 계획 (Plan)
+
+
+### 이외 고려사항들 (Other Considerations)
+
+
+### 마일스톤 (Milestones)
+
+
+
